@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+}
+html,body
+{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+.navbar-dark{
+  background-color: black;
+  color: white;
+}
+.navbar-dark a{
+  color: white;
+}
+.footer{
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer hr{
+  background-color: white;
+}
+#gen{
+  text-align: center;
+  font-size: 20px;
+
+}
+#gen a{
+  padding: 25px;
+  color: white;
+}
+@media (min-width: 577px){#homejumbo{
+  background-image: url("/assets/images/image.jpg");
+  height: 500px;
+  background-position: 0% 20%;
+  text-align: center;
+}
+#homejumbotitle{
+  font-size: 25px;
+  color: white;
+  letter-spacing: 2px;
+}
+#hometag{
+  margin-top: 50px;
+  font-size: 50px;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+}
+}
+@media (max-width: 576px){#homejumbo{
+  background-image: url("/assets/images/rsz_smallimage.jpg");
+  height: 400px;
+  background-position: 35% 3%;
+  text-align: center;
+}
+#homejumbotitle{
+  font-size: 25px;
+  color: black;
+  letter-spacing: 2px;
+}
+#hometag{
+  margin-top: 250px;
+  font-size: 35px;
+  color: black;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+}
+}
