@@ -100,6 +100,9 @@ $('body').scroll(function(){
      var distofintro  = $(".introduction").offset().top; //distance of intro from top
      var distofabout = $(".about").offset().top;
      var distofedu = $(".education").offset().top;
+     var heightofintro = $(".introduction").outerHeight();
+     var heightofedu = $(".education").outerHeight();
+     var heightofabout = $(".about").outerHeight();
      var home = document.getElementById("linktohome");
      var about = document.getElementById("linktoabout");
      var education = document.getElementById("linktoeducation");
@@ -110,19 +113,19 @@ $('body').scroll(function(){
           contact.classList.remove("active");
           education.classList.remove("active");
      }
-     if(disfromtop > distofintro+100){
+     if(disfromtop > distofintro+heightofintro/2){
           home.classList.remove("active");
           about.classList.add("active");
           contact.classList.remove("active");
           education.classList.remove("active");
      }
-     if(disfromtop > distofabout+200){
+     if(disfromtop > distofabout+heightofabout/2){
           home.classList.remove("active");
           about.classList.remove("active");
           contact.classList.remove("active");
           education.classList.add("active");
      }
-     if(disfromtop > distofedu+650){
+     if(disfromtop > distofedu+heightofedu/2){
           home.classList.remove("active");
           about.classList.remove("active");
           contact.classList.add("active");
