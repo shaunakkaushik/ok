@@ -49,10 +49,19 @@ html,body
          padding: 10px;
      }
 }
-@media (max-width: 992px){
-    #navigator{
-        display: none;
-    }
+.left{
+    left: 150px;
+}
+.leftremove{
+    left: 0px;
+}
+#arrow{
+    position: absolute;
+    background-color: teal;
+    padding: 40px 25px;
+    top: 50%;
+    color: white;
+    font-size: 30px;
 }
 #navigator{
     position: absolute;
@@ -63,6 +72,7 @@ html,body
     text-decoration: none;
      margin: 0px;
     text-align: center;
+    display: none;
 }
 #navigator a{
     margin: 0px;
