@@ -2,6 +2,7 @@ $( document ).ready(function() {
 var text = ["Hello Shaunak here","Keep dreaming, keep moving","No need to wait, it loops from here"];
 var counter = 0;
 var counter1 = 0;
+var counter2 = 1;
 var s=1;
 var elem = document.getElementById("hey");
 function type(){
@@ -40,9 +41,40 @@ setInterval(() => {
    }, 300);
 type();
 
+element1 = document.getElementById('arrow');
+element1.addEventListener("click",function(){
+    elepa = document.getElementById("navigator");
+    if(counter2%2==0){
+     elepa.style.display = "none";
+     $("#arrow").addClass("leftremove");
+     $("#arrow").removeClass("left");
+     $("#actualarrow").addClass("fa-angle-right");
+     $("#actualarrow").removeClass("fa-angle-left");
+     counter2++;
+    }
+    else{
+     elepa.style.display = "block";
+     navwidth = $("#navigator").outerWidth();
+     $("#arrow").removeClass("leftremove");
+     $("#arrow").addClass("left");
+     $("#actualarrow").addClass("fa-angle-left");
+     $("#actualarrow").removeClass("fa-angle-right"); 
+     console.log(navwidth);
+     counter2++;
+    }
+    
+});
+
 function getRandomInt(max) {
      return Math.floor(Math.random() * Math.floor(max));
    }
+   element = document.getElementById('mypic');
+   element.addEventListener("mouseover",function(){
+       borderApply();
+   });
+   element.addEventListener("mouseout",function(){
+     borderApply();
+ });
 
 function borderApply(){
      var img = document.getElementById("mypic");
