@@ -205,3 +205,42 @@ html,body
     background-color: black;
     border-radius: 50%;
 }
+#blog1{
+    background-color: black;
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 0.7em;
+    text-decoration: wavy;
+    padding: 60px;
+    padding-bottom: 30px;
+    background-position: center;
+    font-size: 120% ;
+    margin-bottom: 30px;
+
+}
+#blog1 p{
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 0.2em;
+    padding-top: 50px;
+}
+.blog1content{
+    display: none;
+}
+@keyframes example {
+    from {transform: translateY(0px) ;}
+    to {transform: translateY(20px);}
+  }
+#up{
+    display: none;
+    animation-name: example;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+#drop{
+animation-name: example;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+padding: 5px 50px;
+}
