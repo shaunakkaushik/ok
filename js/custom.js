@@ -41,11 +41,13 @@ setInterval(() => {
    }, 300);
 type();
 
+
 element1 = document.getElementById('arrow');
 element1.addEventListener("click",function(){
     elepa = document.getElementById("navigator");
     if(counter2%2==0){
-     elepa.style.display = "none";
+     elepa.style.width = "0px";
+     // elepa.fadeIn();
      $("#arrow").addClass("leftremove");
      $("#arrow").removeClass("left");
      $("#actualarrow").addClass("fa-angle-right");
@@ -53,7 +55,7 @@ element1.addEventListener("click",function(){
      counter2++;
     }
     else{
-     elepa.style.display = "block";
+     elepa.style.width = "149px";
      navwidth = $("#navigator").outerWidth();
      $("#arrow").removeClass("leftremove");
      $("#arrow").addClass("left");
@@ -139,6 +141,13 @@ $('body').scroll(function(){
      var about = document.getElementById("linktoabout");
      var education = document.getElementById("linktoeducation");
      var contact = document.getElementById("linktocontact");
+     var titlw = document.getElementById("diss");
+     if(disfromtop > distofintro){
+          titlw.style.opacity = "0";
+     }
+     else{
+          titlw.style.opacity = "1";
+     }
      if(disfromtop > 0){
           home.classList.add("active");
           about.classList.remove("active");
