@@ -49,6 +49,13 @@ html,body
          padding: 10px;
      }
 }
+#diss{
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    transition: 1s;
+    overflow: hidden;
+}
 .left{
     left: 150px;
 }
@@ -62,6 +69,7 @@ html,body
     top: 50%;
     color: white;
     font-size: 30px;
+    transition: 1s;
 }
 #navigator{
     position: absolute;
@@ -72,7 +80,9 @@ html,body
     text-decoration: none;
      margin: 0px;
     text-align: center;
-    display: none;
+    transition: 1s;
+    width: 0px;
+    overflow: hidden;
 }
 #navigator a{
     margin: 0px;
