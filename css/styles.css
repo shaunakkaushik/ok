@@ -1,256 +1,195 @@
 *{
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box ;
 }
-html,body
-{
-    margin:0; padding:0; height:100%; width:100%; overflow-x: hidden;
+nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 70px;
+   background-color: #fff200;
+   position: fixed;
+   width: 100%;
 }
-.navbar{
-    background-color: black;
-    height: 60px;
-    font-family: 'Indie Flower', cursive;
-}
-.navbar-nav{
-    margin-left: auto;
-    margin-right: auto;
-}
-.navbar-nav a{
-    color: white;
-    padding: 30px;
-    font-size: 30px;
-}
-.navbar-brand{
+.title{
+    color: black;
     font-size: 25px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1.5px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-weight: bold;
+    transition: 1.5s;
 }
-.navbar-brand img{
+nav img{
+    opacity: 0;
+    align-items: center;
     height: 30px;
-    padding-left: 10px;
-    border-radius: 50%;
-    /* border: 2px solid white; */
 }
-.navbar-nav a:hover{
-    text-decoration: underline;
-    color: white;
+.titleimg{
+    transition: 1.5s;
+    border-radius: 30%;
 }
-@media (max-width: 992px){
-    #navbarSupportedContent{ 
-        position: absolute;
-        background-color: black ;
-        width: 100%;    
-        top: 60px;
-        text-align: center;
-        margin-left: 0px;
-        margin-right: 0px;  
-        padding: 10px;
-        left: 0px;
-     }
-     #navbarSupportedContent li{
-         padding: 10px;
-     }
-}
-#diss{
-    display: inline;
-    padding: 0px;
-    margin: 0px;
-    transition: 1s;
-    overflow: hidden;
-}
-.left{
-    left: 150px;
-}
-.leftremove{
-    left: 0px;
-}
-#arrow{
-    position: absolute;
-    background-color: teal;
-    padding: 40px 25px;
-    top: 50%;
-    color: white;
-    font-size: 30px;
-    transition: 1s;
-}
-#navigator{
-    position: absolute;
-    top: 40%;
-    background-color: teal;
-    color: white;
-    margin: 0px;
-    text-decoration: none;
-     margin: 0px;
-    text-align: center;
-    transition: 1s;
-    width: 0px;
-    overflow: hidden;
-}
-#navigator a{
-    margin: 0px;
-     color: white;
-     display: block;
-     text-align: center;
-    text-decoration: none;
-    padding: 20px 40px
-} 
-#navigator a:hover{
-    color:teal;
-    background-color: white;
-    text-decoration: none;
-}
-.active{
-    color:teal !important;
-    background-color: white !important;
-    text-decoration: none !important;
-
-}
-
-.introduction{
-    margin-top: 80px;
-    text-align: center;
-    background-image: url(../pics/mybackground.jpg);
-    background-position: 30% 30%;
-    color: white;
-    height: 500px;
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 0.7em;
-    text-decoration: wavy;
-    height:100%;
-    width:100%;
-    /* position: relative; */
-}
-.introduction h1{
-    padding-top: 20%;
-}
-
-@media (max-width: 992px){
-    .introduction h1{
-        padding-top: 60%;
-    }
-}
-.introduction img{
-    height: 300px; 
-}
-.imageholder{
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-align: center;
-}
-.about img{
-    height: 250px;
-    border-radius: 50%;
-    /* border: "2px solid white"; */
-}
-.image_des{
-    padding: 15px;
-    font-size: 2em;
-    letter-spacing: 2px;
-    font-family: 'Shadows Into Light', cursive;
-    text-align: center;
-}
-.about{
-    padding-top: 70px ;
-    padding-bottom  : 70px ;
-}
-#lorem{
-    display: none;
-}
-.education{
-    text-align: center;
-    padding: 15px;
-    font-size: 2em;
-    letter-spacing: 2px;
-    font-family: 'Shadows Into Light', cursive;
-    background-color: black;
-    color: white;
-    padding-top: 70px ;
-    padding-bottom  : 70px ;
-}
-.education img{
-    height: 250px;
-    border-radius: 50%;
-    border: 5px solid white;
-}
-.education li{
-    padding-top: 70px ;
-    padding-bottom  : 70px ;
+li{
     list-style: none;
 }
-@media (max-width: 992px){
-    .education{
-        text-align: center;
-        font-size: 15px;
-        font-family: 'Shadows Into Light', cursive;
-        background-color: black;
-       color: white;
-       padding-top: 70px ;
-    padding-bottom  : 70px ;
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%; 
+}
+@media (max-width: 916px){
+    .nav-links{
+        width: 60%; 
     }
-    .education img{
-        height: 100px;
-        border-radius: 50%;
-        
-    }    
-}
-.contact {
-    text-align: center;
-    padding: 15px;
-    font-size: 2em;
-    letter-spacing: 2px;
-    font-family: 'Shadows Into Light', cursive; 
-    color: black;
-    padding-top: 70px ;
-    padding-bottom  : 70px;
-}
-.contact i{
-    padding: 15px;
-}
-.contact a{
-    text-decoration: none;
-    color: black;
-}
-.contact i:hover{
-    padding: 15px;
-    color: white;
-    background-color: black;
-    border-radius: 50%;
-}
-#blog1{
-    background-color: black;
-    color: white;
-    margin-top: 80px;
-    text-align: center;
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 0.7em;
-    text-decoration: wavy;
-    padding: 60px;
-    padding-bottom: 30px;
-    background-position: center;
-    font-size: 120% ;
-    margin-bottom: 30px;
 
 }
-#blog1 p{
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 0.2em;
-    padding-top: 50px;
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-weight: bold;
 }
-.blog1content{
+.nav-links a:hover{
+    text-decoration: underline;
+    color: #4b8b3b;
+}
+.burger{
     display: none;
 }
-@keyframes example {
-    from {transform: translateY(0px) ;}
-    to {transform: translateY(20px);}
-  }
-#up{
-    display: none;
-    animation-name: example;
-animation-duration: 2s;
-animation-iteration-count: infinite;
+.burger div{
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    margin: 5px;
 }
-#drop{
-animation-name: example;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-padding: 5px 50px;
+
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 70px;
+        width: 50%;
+        background-color: #fff200;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+}
+#cvlink{
+    border: 3px solid black;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: black;
+    color: #fff200;
+}
+.nav-active{
+    transform: translateX(0%);
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px) ;
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px) ;
+}
+.jumbotron{
+    height: 100vh;
+    background-image: url("../pics/1920x1080-Dark-Minimal-Mountains-At-Night-1080P-Laptop-Full-.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+.jumbotron h1{
+    text-align: center;
+    padding-top: 50vh;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    letter-spacing: 3px;
+    color: seashell;
+}
+.active{
+    text-decoration: underline !important;
+}
+.aboutimg{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+.about img{
+    width: 30vh;
+    border-radius: 50%;
+    border: 6px solid #00b140;
+}
+.about{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: #00b140;
+    padding: 20vh 30vh;
+    line-height: 125%;
+}
+@media (min-width: 1000px )and (max-width: 1500px){
+    .about{
+        padding: 20vh 15vh;
+    }
+}
+@media (min-width: 768px )and (max-width: 1000px){
+    .about{
+        padding: 20vh 5vh;
+    }
+}
+@media (max-width: 767px){
+    .about{
+        padding: 20vh 2vh;
+    }
+}
+.skills{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-align: center;
+    line-height: 50px;
+    background-color: black;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: #fff200;
+}
+.contact{
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    line-height: 10vh;
+    background: rgb(255,242,0);
+background: radial-gradient(circle, rgba(255,242,0,1) 35%, rgba(0,177,64,1) 100%);
+}
+.contact a{
+    color: black;
+    margin: 10vh;
+
+}
+.copyright{
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    line-height: 10vh;
+    background-color: black;
+    color: #fff200;
 }
